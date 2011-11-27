@@ -6,7 +6,7 @@ sphinxsearch properly installed.
 This library will use sphinxsearch API approach. It delegates 
 method calls to the sphinxsearch client following the ci convention.
 Ex if sphinx client have method named SetServer you can call it via
-$this->sphinxsearch->set_server($params_here)
+$this->sphinx->set_server($params_here)
 
 You can configure some settings like server etc by omitting the set 
 and use snakes instead of camels. 
@@ -15,5 +15,5 @@ Ex since we have SetMaxQueryTime method we can set $config['max_query_time']  = 
 At this moment indexing is not supported but will be added in the future. 
 
 Usage:
-$this->load->spark('sphinxsearch/0.0.1'); $result = $this->sphinxsearch->query("test");
+$this->load->spark('sphinx/0.0.1'); $result = $this->sphinx->query("test");
 
